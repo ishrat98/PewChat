@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Pages\Home\About.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Home\Contact.cshtml" />
+    <None Include="Pages\Home\Index.cshtml" />
+  </ItemGroup>
+
+
+
+</Project>
