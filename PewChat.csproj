@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <Compile Include="Pages\Home\About.cshtml" />
   </ItemGroup>
@@ -13,6 +14,8 @@
     <None Include="Pages\Home\Index.cshtml" />
   </ItemGroup>
 
+=======
+>>>>>>> 346bbc33e3b6fcbfb05e9839b09db33be6a1a26e
 
 
 </Project>

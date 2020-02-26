@@ -6,8 +6,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Hosting;
 
+=======
+>>>>>>> 346bbc33e3b6fcbfb05e9839b09db33be6a1a26e
 
 namespace PewChat
 {
@@ -15,6 +18,7 @@ namespace PewChat
     {
         public static void Main(string[] args)
         {
+<<<<<<< HEAD
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
@@ -25,5 +29,16 @@ namespace PewChat
 
             host.Run();
         }
+=======
+            CreateHostBuilder(args).Build().Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+>>>>>>> 346bbc33e3b6fcbfb05e9839b09db33be6a1a26e
     }
 }
